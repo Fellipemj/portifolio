@@ -1,0 +1,94 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+body {
+    background-color: #010423;
+    padding-bottom: 50px;
+}
+
+.menu {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+}
+
+.menu-links {
+    display: flex; 
+    align-items: center; 
+    flex-grow: 1; 
+    justify-content: center; 
+}
+
+.menu a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 20px; 
+    font-size: 18px; 
+}
+
+.menu a:hover { 
+    text-decoration: underline; 
+}
+
+.menu a:visited { 
+    color: white; 
+}
+
+.menu a:active { 
+    color: white; 
+}
+
+#quem {
+    color: white;
+    text-align: center;
+    margin-top: 90px; 
+    font-size: 30px;
+}
+
+.bio {
+    color: white;
+    font-size: 14px;
+    margin: 30px auto; 
+    padding: 20px; 
+    text-align: justify; 
+    max-width: 600px; 
+    border: 2px solid white; 
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.rodape {
+    background-color: #1E1D1D; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    width: 100%; 
+    margin-top: auto; 
+    position: fixed;
+    bottom: 0;
+}
+
+.rodape .imagens {
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+
+.contato {
+    background-color: #821656; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin-bottom: 10px; 
+}
+
+.contato:hover {
+    background-color: #821656; 
+}

@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #010423;
+    padding-bottom: 50px;
+}
+
+.menu {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+}
+
+.menu-links {
+    display: flex; 
+    align-items: center; 
+    flex-grow: 1; 
+    justify-content: center; 
+}
+
+.menu a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 20px; 
+    font-size: 18px; 
+}
+
+.menu a:hover { 
+    text-decoration: underline; 
+}
+
+.menu a:visited { 
+    color: white; 
+}
+
+.menu a:active { 
+    color: white; 
+}
+
+.rectangle {
+    background-color: #010423;
+    color: white;
+    width: 862px;
+    height: auto; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid #62EBAF;
+    border-radius: 10px;
+    text-align: left; 
+    padding: 20px; 
+    font-size: 25px;
+}
+
+.rectangle h1 {
+    margin: 0; 
+    font-size: 24px; 
+}
+
+.rectangle p {
+    margin: 10px 0 0 0; 
+
+    line-height: 1.5; 
+}
+
+.habilidade{
+color: white;
+text-align: center;
+padding: 30px;
+font-size: 50px;
+}
+
+.rodape {
+    background-color: #1E1D1D; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    width: 100%; 
+}
+
+.rodape .imagens {
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+
+.contato {
+    background-color: #821656; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin-bottom: 10px; 
+}
+
+.contato:hover {
+    background-color: #821656; 
+}
+
+@media (max-width: 768px) {
+    .menu a {
+        font-size: 16px; 
+        margin: 0 10px; 
+    }
+    
+    .nome_centro {
+        font-size: 20px; 
+        margin-top: 50px; 
+    }
+    
+    .imagens img {
+        width: 30px; 
+    }
+    
+    .contato {
+        font-size: 14px; 
+        padding: 8px 15px; 
+    }
+}
+
