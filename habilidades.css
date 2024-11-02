@@ -1,0 +1,155 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #010423;
+    padding-bottom: 50px; 
+}
+
+
+.menu {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+}
+
+.menu-links {
+    display: flex; 
+    align-items: center; 
+    flex-grow: 1; 
+    justify-content: center; 
+}
+
+.menu a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 20px; 
+    font-size: 1.2em; 
+}
+
+.menu a:hover { 
+    text-decoration: underline; 
+}
+
+
+.rectangle {
+    background-color: #010423;
+    color: white;
+    width: 90%; 
+    max-width: 862px; 
+    height: auto; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid #62EBAF;
+    border-radius: 10px;
+    text-align: left; 
+    padding: 20px; 
+    font-size: 1.5em; 
+}
+
+.rectangle h1 {
+    margin: 0; 
+    font-size: 1.5em;
+}
+
+.rectangle p {
+    margin: 10px 0 0 0; 
+    line-height: 1.5; 
+}
+
+
+.habilidade {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 3em; 
+}
+
+
+.rodape {
+    background-color: #1E1D1D; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    width: 100%; 
+}
+
+.rodape .imagens {
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+
+
+.contato {
+    background-color: #821656; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 1em; 
+    cursor: pointer; 
+    margin-bottom: 10px; 
+}
+
+.contato:hover {
+    background-color: #721245; 
+}
+
+
+@media (max-width: 768px) {
+    .menu a {
+        font-size: 1em; 
+        margin: 0 10px; 
+    }
+
+    .rectangle {
+        font-size: 1.2em; 
+        padding: 15px; 
+    }
+
+    .rectangle h1 {
+        font-size: 1.2em; 
+    }
+
+    .habilidade {
+        font-size: 2.5em;
+    }
+
+    .contato {
+        font-size: 0.9em; 
+        padding: 8px 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 0.9em; 
+        margin: 0 5px; 
+    }
+
+    .rectangle {
+        font-size: 1em; 
+        padding: 10px; 
+    }
+
+    .rectangle h1 {
+        font-size: 1em; 
+    }
+
+    .habilidade {
+        font-size: 2em; 
+    }
+
+    .contato {
+        font-size: 0.8em; 
+        padding: 7px 12px; 
+    }
+}

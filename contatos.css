@@ -1,0 +1,183 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    background-color: #0D0E1F;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+
+.menu {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px; 
+    background-color: #0D0E1F; 
+}
+
+.menu-links {
+    display: flex; 
+    align-items: center; 
+}
+
+.menu a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 20px; 
+    font-size: 1.2em; 
+}
+
+.menu a:hover { 
+    text-decoration: underline; 
+}
+
+
+.container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto; 
+    flex-grow: 1; 
+}
+
+
+h2 {
+    font-size: 2em; 
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em; 
+    color: #CCCCCC;
+    margin-bottom: 30px;
+}
+
+
+.form-container {
+    background-color: #111329;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.form-container h3 {
+    color: #BADA55; 
+    font-size: 1.5em; 
+    margin-bottom: 20px;
+}
+
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: none;
+    background-color: #E0E0E0;
+    color: #333333;
+    font-size: 1em; 
+}
+
+.form-input::placeholder {
+    color: #666666;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #111329;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #BADA55; 
+}
+
+
+.rodape {
+    background-color: #1E1D1D; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    width: 100%; 
+}
+
+.rodape .imagens {
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+
+.rodape .imagens a {
+    margin: 0 10px; 
+}
+
+.contato {
+    background-color: #821656; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 1em; 
+    cursor: pointer; 
+    margin-bottom: 10px; 
+}
+
+.contato:hover {
+    background-color: #721245; 
+}
+
+
+@media (max-width: 768px) {
+    .menu a {
+        font-size: 1em; 
+        margin: 0 10px; 
+    }
+
+    .container h2 {
+        font-size: 1.5em; 
+    }
+
+    .container p {
+        font-size: 1em; 
+    }
+    
+    .form-input {
+        font-size: 0.9em; 
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 0.9em; 
+    }
+
+    .container h2 {
+        font-size: 1.3em; 
+    }
+
+    .container p {
+        font-size: 0.8em; 
+    }
+
+    .form-input {
+        font-size: 0.8em; 
+    }
+
+    .contato {
+        font-size: 0.8em; 
+    }
+}

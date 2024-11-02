@@ -1,0 +1,136 @@
+body {
+    background-image: url('background.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.menu {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+}
+
+.menu-links {
+    display: flex; 
+    align-items: center; 
+    flex-grow: 1; 
+    justify-content: center; 
+}
+
+.menu a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 20px; 
+    font-size: 1.2em; 
+}
+
+.menu a:hover { 
+    text-decoration: underline; 
+}
+
+.menu a:visited { 
+    color: white; 
+}
+
+.menu a:active { 
+    color: white; 
+}
+
+
+.imagens {
+    display: flex; 
+    align-items: center; 
+}
+
+.imagens img {
+    width: 30px; 
+    height: auto; 
+    margin-left: 10px; 
+}
+
+
+.nome_centro {
+    text-align: center;
+    color: white; 
+    font-size: 2em; 
+    margin-top: 100px; 
+    flex-grow: 1; 
+}
+
+
+.rodape {
+    background-color: #1E1D1D; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    width: 100%; 
+}
+
+.rodape .imagens {
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+
+
+.contato {
+    background-color: #821656; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 1em; 
+    cursor: pointer; 
+    margin-bottom: 10px; 
+}
+
+.contato:hover {
+    background-color: #721245; 
+}
+
+
+@media (max-width: 768px) {
+    .menu a {
+        font-size: 1em; 
+        margin: 0 10px; 
+    }
+    
+    .nome_centro {
+        font-size: 1.5em;
+        margin-top: 50px; 
+    }
+    
+    .imagens img {
+        width: 25px; 
+    }
+    
+    .contato {
+        font-size: 0.9em; 
+        padding: 8px 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 0.9em; 
+        margin: 0 5px; 
+    }
+
+    .nome_centro {
+        font-size: 1.3em; 
+    }
+
+    .imagens img {
+        width: 20px; 
+    }
+
+    .contato {
+        font-size: 0.8em; 
+        padding: 7px 12px; 
+    }
+}

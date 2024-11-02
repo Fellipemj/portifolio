@@ -1,0 +1,171 @@
+/* Estilos Gerais */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+    background-color: #010423;
+}
+
+.container {
+    flex: 1; 
+    padding-bottom: 50px;
+}
+
+
+.menu {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px;
+    background-color: transparent; 
+}
+
+.menu-links {
+    display: flex; 
+    align-items: center; 
+    flex-grow: 1; 
+    justify-content: center; 
+}
+
+.menu a {
+    color: white; 
+    text-decoration: none; 
+    margin: 0 20px; 
+    font-size: 1.2em;
+    transition: color 0.2s, transform 0.2s; 
+}
+
+.menu a:hover { 
+    text-decoration: underline; 
+    color: #62EBAF; 
+    transform: scale(1.1); 
+}
+
+
+#quem {
+    color: white;
+    text-align: center;
+    margin-top: 90px; 
+    font-size: 2em; 
+}
+
+
+.bio {
+    font-size: 1em; 
+    margin: 30px auto; 
+    padding: 20px; 
+    text-align: justify; 
+    max-width: 600px; 
+    border-radius: 10px; 
+    color: white;
+}
+
+
+body.dark-mode {
+    background-color: #010423;
+    color: white; 
+}
+
+.bio.dark-mode {
+    border: 2px solid white; 
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+body.light-mode {
+    background-color: #FFFFFF;
+    color: #000000; 
+}
+
+.menu.light-mode {
+    background-color: black; 
+}
+
+.menu.light-mode a {
+    color: white; 
+}
+
+#quem.light-mode {
+    color: black; 
+}
+
+.bio.light-mode {
+    color: #000000; 
+    border: 2px solid black; 
+    background-color: #FFFFFF;
+}
+
+
+.rodape {
+    background-color: #1E1D1D; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    width: 100%; 
+    margin-top: auto; 
+}
+
+.rodape .imagens {
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+
+
+.contato {
+    background-color: #821656; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 1em; 
+    cursor: pointer; 
+    margin-bottom: 10px; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.contato:hover {
+    background-color: #721245; 
+    transform: scale(1.05); 
+}
+
+
+@media (max-width: 768px) {
+    .menu a {
+        font-size: 1em;
+        margin: 0 10px; 
+    }
+    
+    .nome_centro {
+        font-size: 1.5em;
+        margin-top: 50px; 
+    }
+    
+    .imagens img {
+        width: 25px;
+    }
+    
+    .contato {
+        font-size: 0.9em;
+        padding: 8px 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 0.9em;
+        margin: 0 5px; 
+    }
+
+    .nome_centro {
+        font-size: 1.3em;
+    }
+
+    .imagens img {
+        width: 20px;
+    }
+
+    .contato {
+        font-size: 0.8em;
+        padding: 7px 12px; 
+    }
+}
